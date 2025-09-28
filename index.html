@@ -54,6 +54,7 @@
         </div>
         <button class="button" onclick="showSurprise()">Click for Surprise!</button>
         <div id="surprise" style="display:none; margin-top:20px;">
+			<audio id="birthdayMusic" src="music.mp4" preload="auto"></audio>
             <p>🎉 Surprise! 🎉 Here's a special message just for you!</p>
             	<p>On this special day...</p>
 				<p>as radiant as the rest,</p>
@@ -106,9 +107,11 @@
     </div>
 
     <script>
-        function showSurprise() {
-            document.getElementById('surprise').style.display = 'block';
-        }
+        	function showSurprise() {
+    document.getElementById('surprise').style.display = 'block';
+    document.getElementById('birthdayMusic').play();
+					}
+        
     </script>
 
 </body>
